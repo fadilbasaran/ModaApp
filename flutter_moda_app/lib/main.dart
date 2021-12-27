@@ -76,17 +76,17 @@ class _AnaSayfaState extends State<AnaSayfa> {
                 const SizedBox(width: 25),
               ],
             ),
-          )
+          ),
           //Card
-          ,
+
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Material(
               borderRadius: BorderRadius.circular(16),
               elevation: 4,
-              color: Colors.blue.shade300,
+              //color: Colors.blue.shade300,
               child: Container(
-                height: 570,
+                height: 500,
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 child: Column(
@@ -144,8 +144,156 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     ),
                     const SizedBox(height: 15),
                     const Text(
-                        'This ooficial website features a ribbed knit zipper jacket that  is'
-                        ' modern anda stylish. It looks very temparent and is recommend friends'),
+                      'This ooficial website features a ribbed knit zipper jacket that  is'
+                      ' modern anda stylish. It looks very temparent and is recommend friends',
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontFamily: 'Montserrat',
+                          color: Colors.grey),
+                    ),
+                    const SizedBox(height: 15),
+                    Row(
+                      children: [
+                        Container(
+                          height: 200,
+                          width: (MediaQuery.of(context).size.width - 50) / 2,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/modelgrid1.jpeg'),
+                                  fit: BoxFit.cover)),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 95,
+                              width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: const DecorationImage(
+                                      image:
+                                          AssetImage('assets/modelgrid2.jpeg'),
+                                      fit: BoxFit.cover)),
+                            ),
+                            const SizedBox(height: 10),
+                            Container(
+                              height: 95,
+                              width:
+                                  (MediaQuery.of(context).size.width - 100) / 2,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: const DecorationImage(
+                                      image:
+                                          AssetImage('assets/modelgrid3.jpeg'),
+                                      fit: BoxFit.cover)),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Container(
+                          height: 25,
+                          width: 90,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.brown.withOpacity(0.2)),
+                          child: const Center(
+                            child: Text(
+                              '# Louis vuitton',
+                              style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 10,
+                                  color: Colors.brown),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Container(
+                          height: 25,
+                          width: 75,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.brown.withOpacity(0.2)),
+                          child: const Center(
+                            child: Text(
+                              '# Chloe',
+                              style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 10,
+                                  color: Colors.brown),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    const Divider(),
+                    const SizedBox(height: 20),
+                    Row(
+                      children: [
+                        Icon(Icons.reply,
+                            color: Colors.brown.withOpacity(0.2), size: 30),
+                        const SizedBox(width: 5),
+                        const SizedBox(width: 5),
+                        Text(
+                          '1.7K',
+                          style: TextStyle(
+                            fontFamily: 'MontSerrat',
+                            fontSize: 16,
+                            color: Colors.grey.withOpacity(0.7),
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(width: 25),
+                        Icon(Icons.comment,
+                            color: Colors.brown.withOpacity(0.2), size: 30),
+                        const SizedBox(width: 5),
+                        const SizedBox(width: 5),
+                        Text(
+                          '325',
+                          style: TextStyle(
+                            fontFamily: 'MontSerrat',
+                            fontSize: 16,
+                            color: Colors.grey.withOpacity(0.7),
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width - 235,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              const Icon(
+                                Icons.favorite,
+                                color: Colors.red,
+                                size: 30,
+                              ),
+                              const SizedBox(width: 5),
+                              const SizedBox(width: 5),
+                              Text(
+                                '2.3K',
+                                style: TextStyle(
+                                  fontFamily: 'MontSerrat',
+                                  fontSize: 16,
+                                  color: Colors.grey.withOpacity(0.7),
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
