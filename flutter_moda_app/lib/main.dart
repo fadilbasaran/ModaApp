@@ -45,13 +45,14 @@ class _AnaSayfaState extends State<AnaSayfa> {
         ],
       ),
       body: ListView(
-        padding: const EdgeInsets.only(top:15),
+        padding: const EdgeInsets.only(top: 15),
         children: [
           Container(
             color: Colors.blue,
             height: 150,
             width: double.infinity,
             child: ListView(
+              padding: const EdgeInsets.all(10),
               scrollDirection: Axis.horizontal,
               children: [
                 listeElemani('assets/model1.jpeg', 'assets/chanellogo.jpg'),
@@ -68,16 +69,25 @@ class _AnaSayfaState extends State<AnaSayfa> {
       children: [
         Stack(
           children: [
+            //ilk koyduğumuz eleman altta oluyor.diğer elemnlar bununn üstünde
             Container(
               height: 75,
               width: 75,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
                 image: DecorationImage(
-                  image: AssetImage(imagePath),
-                ),
+                    image: AssetImage(imagePath), fit: BoxFit.cover),
               ),
             ),
+            Container(
+              height: 25,
+              width: 35,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                image: DecorationImage(
+                    image: AssetImage(logoPath), fit: BoxFit.cover),
+              ),
+            )
           ],
         )
       ],
