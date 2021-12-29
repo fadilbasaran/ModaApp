@@ -80,7 +80,7 @@ class ProfilList extends StatelessWidget {
           ),
           child: const Center(
             child: Text(
-              'Fallow',
+              'Follow',
               style: TextStyle(
                   fontFamily: 'Montserrat', fontSize: 14, color: Colors.white),
             ),
