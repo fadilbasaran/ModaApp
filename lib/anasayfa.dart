@@ -68,7 +68,7 @@ class _AnaSayfaState extends State<AnaSayfa>
           const ProfilList(),
 
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(6.0),
             child: Material(
               borderRadius: BorderRadius.circular(16),
               elevation: 4,
