@@ -9,7 +9,7 @@ class ModaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: AnaSayfa(),
     );
   }
