@@ -88,7 +88,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(35),
                             image: const DecorationImage(
-                                image: AssetImage('assets/model1.jpeg'),
+                                image: AssetImage('assets/model2.jpeg'),
                                 fit: BoxFit.cover),
                           ),
                         ),
@@ -98,7 +98,7 @@ class _AnaSayfaState extends State<AnaSayfa>
                         SizedBox(
                           width: MediaQuery.of(context).size.width - 160,
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: const [
                               Text(
                                 'Daisy',
