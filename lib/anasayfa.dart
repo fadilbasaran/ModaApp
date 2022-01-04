@@ -35,7 +35,7 @@ class _AnaSayfaState extends State<AnaSayfa>
           tabs: const [
             Tab(icon: Icon(Icons.more, color: Colors.grey, size: 22)),
             Tab(icon: Icon(Icons.play_arrow, color: Colors.grey, size: 22)),
-            Tab(icon: Icon(Icons.navigation, color: Colors.grey, size: 34)),
+            Tab(icon: Icon(Icons.navigation, color: Colors.grey, size: 22)),
             Tab(
                 icon: Icon(Icons.supervised_user_circle,
                     color: Colors.grey, size: 16)),
@@ -62,7 +62,7 @@ class _AnaSayfaState extends State<AnaSayfa>
         ],
       ),
       body: ListView(
-        padding: const EdgeInsets.only(top: 5),
+        padding: const EdgeInsets.only(top: 15),
         children: [
           //Üst taraftali profil listesi
           const ProfilList(),
