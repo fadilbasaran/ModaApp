@@ -35,7 +35,7 @@ class _AnaSayfaState extends State<AnaSayfa>
           tabs: const [
             Tab(icon: Icon(Icons.more, color: Colors.grey, size: 22)),
             Tab(icon: Icon(Icons.play_arrow, color: Colors.grey, size: 22)),
-            Tab(icon: Icon(Icons.navigation, color: Colors.grey, size: 2)),
+            Tab(icon: Icon(Icons.navigation, color: Colors.grey, size: 22)),
             Tab(
                 icon: Icon(Icons.supervised_user_circle,
                     color: Colors.grey, size: 16)),
